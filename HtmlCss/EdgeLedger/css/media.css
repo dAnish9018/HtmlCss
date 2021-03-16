@@ -1,0 +1,30 @@
+/* Mobile */
+
+@media(max-width:500px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+#content{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: blue;
+}
+    #navbar{
+        flex-direction: column;
+        
+    }
+
+    #navbar ul{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:768px) and (min-width:501px){
+   #navbar{
+       flex-direction: column;
+       justify-content: center;
+   } 
+  
+}

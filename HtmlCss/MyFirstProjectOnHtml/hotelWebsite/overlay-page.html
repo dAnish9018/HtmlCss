@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overlay</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background: #333;
+        color: #fff;
+        z-index: 100;
+      }
+      header::before {
+        content: "ddfs";
+        color: rgb(70, 62, 62);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("https://source.unsplash.com/user/erondu/daily")
+          no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Heading Title</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea velit
+        dolorum, impedit dolore, molestias doloremque vel reiciendis quidem
+        obcaecati tempora vero quaerat, aperiam unde officia in ipsam nesciunt
+        ut debitis accusantium. Aliquam libero repudiandae consectetur quod
+        perspiciatis architecto placeat perferendis tempore, quidem, mollitia
+        sint autem hic et. Quia, fugit quidem!
+      </p>
+    </header>
+  </body>
+</html>
